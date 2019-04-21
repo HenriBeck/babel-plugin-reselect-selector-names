@@ -2,7 +2,7 @@ import { declare } from '@babel/helper-plugin-utils';
 import { types as t, NodePath } from '@babel/core';
 import { VariableDeclaration } from '@babel/types';
 
-const validNames = ['createSelector'];
+const validNames = ['createSelector', 'createCachedSelector'];
 
 export default declare((api) => {
   api.assertVersion(7);
